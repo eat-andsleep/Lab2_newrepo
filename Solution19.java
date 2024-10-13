@@ -62,6 +62,7 @@ class Solution {
           }
         }
 
+        //规则二无需显式设置
         // 规则 1 或规则 3
         if ((copyBoard[row][col] == 1) && (liveNeighbors < 2 || liveNeighbors > 3)) {
           board[row][col] = 0;
@@ -87,6 +88,7 @@ class L2022211802_19_Test {
     solution = new Solution();
   }
 
+  //简单测试用例
   @Test
   void testGameOfLifeSimpleCase() {
     board = new int[][]{{0, 1, 0}, {0, 0, 1}, {1, 1, 1}};
@@ -95,6 +97,7 @@ class L2022211802_19_Test {
     assertArrayEquals(expected, board);
   }
 
+  //二维数组测试用例
   @Test
   void testGameOfLifeAnotherCase() {
     board = new int[][]{{1, 1}, {1, 0}};
