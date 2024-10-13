@@ -77,7 +77,7 @@ class Solution {
 
 
 
-class SolutionTest {
+class L2022211802_19_Test {
 
   private Solution solution;
   private int[][] board;
